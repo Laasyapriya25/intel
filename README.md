@@ -11,3 +11,10 @@ The third component, the Market Requirements Document (MRD), outlines the busine
 The final section includes a sample Python code simulating real-time vitals monitoring and AI-based preliminary diagnosis. It generates randomized health data such as temperature, blood pressure, SpO₂, and pulse, and applies basic rules to flag possible health conditions like hypoxia or hypertension.
 
 In summary, this document provides a well-rounded solution that merges cutting-edge technologies, national digital health frameworks, and strategic business planning to create a scalable, inclusive, and impactful product category for India’s healthcare sector. 
+
+
+
+
+
+
+
