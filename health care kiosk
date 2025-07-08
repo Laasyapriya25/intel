@@ -1,0 +1,31 @@
+
+
+import random
+from transformers import pipeline
+
+# Load translation and text generation pipelines
+translate = pipeline("translation", model="Helsinki-NLP/opus-mt-en-hi")  # English to Hindi
+diagnose = pipeline("text-generation", model="EleutherAI/gpt-neo-1.3B")  # LLM-based diagnosis
+
+# Simulated vitals
+vitals = {
+    "temperature": round(random.uniform(97.0, 102.5), 1),
+    "heart_rate": random.randint(60, 100),
+    "spo2": random.randint(90, 99)
+}
+
+# Simulated input
+symptoms = "I have fever and dry cough since 2 days."
+
+# Translate to Hindi (can be extended to other languages)
+translated_symptoms = translate(symptoms)[0]['translation_text']
+
+# AI Diagnosis (mock)
+diagnosis_input = f"Patient symptoms: {symptoms}. Vitals: {vitals}. Suggest possible diagnosis and treatment."
+preliminary_diagnosis = diagnose(diagnosis_input, max_length=100)[0]['generated_text']
+
+# Display Output
+print("Patient Vitals:", vitals)
+print("Symptoms (English):", symptoms)
+print("Symptoms (Hindi):", translated_symptoms)
+print("Preliminary Diagnosis (AI):", preliminary_diagnosis)
