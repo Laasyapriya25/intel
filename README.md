@@ -12,6 +12,9 @@ The final section includes a sample Python code simulating real-time vitals moni
 
 In summary, this document provides a well-rounded solution that merges cutting-edge technologies, national digital health frameworks, and strategic business planning to create a scalable, inclusive, and impactful product category for India’s healthcare sector. 
 
+![image](https://github.com/user-attachments/assets/1af92a8a-fc4f-4ac3-bbb7-b24235709da9)
+
+
 Author:- laasya priya .Raja
 
 
